@@ -280,6 +280,10 @@ a.btn-next .highlight {
   font-style: normal;
   line-height: 36px;
   color: #454545;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
 }
 
 .card-title:hover a {
@@ -314,6 +318,13 @@ a.btn-next .highlight {
   font-style: normal;
   color: #787878;
   line-height: 30px;
+}
+
+.box-why-choosen .card-text p {
+  display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
 }
 
 .box-testimonial {
