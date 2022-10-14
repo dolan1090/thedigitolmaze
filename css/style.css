@@ -322,9 +322,9 @@ a.btn-next .highlight {
 
 .box-why-choosen .card-text p {
   display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 3;
-    overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
 }
 
 .box-testimonial {
@@ -483,6 +483,32 @@ footer {
   color: #5fbc65;
 }
 
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 74px;
+  right: -74px;
+  z-index: 99;
+  font-size: 12px;
+  border: none;
+  outline: none;
+  background-color: #5fbc65ed;
+  color: #fff;
+  cursor: pointer;
+  padding: 15px 36px;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  transform: rotate(270deg);
+  font-family: europa, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+
 /* Responsive */
 
 @media (min-width: 1200px) {
@@ -639,6 +665,9 @@ footer {
   }
   .footer-top .text-left {
     margin-bottom: 30px;
+  }
+  #myBtn {
+    display: none !important;
   }
 }
 
