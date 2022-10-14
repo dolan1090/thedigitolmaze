@@ -73,36 +73,25 @@ var swiper = new Swiper(".mySwiper1", {
   //   disableOnInteraction: false,
   // },
 });
-
-var swiper2 = new Swiper(".mySwipercard", {
-  slidesPerView: 1,
-  spaceBetween: 10,
-  freeMode: true,
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-  pagination: {
-    el: ".mySwipercard .swiper-pagination",
-    clickable: true,
-  },
-  breakpoints: {
-    992: {
-      slidesPerView: 4,
-      spaceBetween: 30,
-    },
-    768: {
-      slidesPerView: 3,
-      spaceBetween: 20,
-    },
-    576: {
-      slidesPerView: 2,
-      spaceBetween: 15,
-    },
-  },
-});
-
 // End slide
+
+// back to top
+// When the user scrolls down 50px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
 
 // transitions
 gsap.registerPlugin(ScrollTrigger);
